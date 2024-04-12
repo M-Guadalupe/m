@@ -1,0 +1,34 @@
+Usuario={
+    "nombre":"Omi",
+    "password":"Omi1234",
+}
+print(usuario.get("nombre"))
+#nombre1=usuario.get("nombre")
+
+#print(usuario["nombre"])
+nombre2=usuario["nombre"]
+
+usuario["nombre"]=="miguel"
+usuario["password"]=="miguel123"
+if usuario["nombre"]=="Omi":
+    usuario["nombre"]=="angel"
+
+usuario={
+    "nombre":"angel",
+    "password":"Omi1234",
+    "nombre":"miguel",
+    "password":"miguel123",
+}
+if usuario["nombre"]=="Omi":
+    del usuario["nombre"]
+    print ("usuario eliminado")
+else:
+    print("EL usuario no se encontro")
+
+#copiar diccionario
+usuario2=usuario.copy()
+print(usuario2)
+
+for atributo in usuario.items():
+    print(f"{atributo} tiene el valor {valor2}")
+
